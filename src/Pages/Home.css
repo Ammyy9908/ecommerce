@@ -1,0 +1,240 @@
+.hero{
+    width: 100%;
+    height: 780px;
+    background-color: #ccc;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.hero >  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.banner-content{
+    width: 730px;
+    height: 305px;
+    background: rgba(247, 248, 250, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    backdrop-filter: blur(24px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.banner-content-main{
+    width: 100%;
+    text-align: center;
+    
+}
+.banner-content-main h3,h1,p{
+    
+    margin-top: 0;
+}
+.banner-content-main p{
+    margin-bottom: 15px;
+    width: 65%;
+    text-align: center;
+    margin:15px auto;
+}
+
+.banner-discover-btn{
+    width: 310px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    color: var(--light-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-container{
+    width: 75%;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.product-container h2,p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-container h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+.product-container p{
+    color: #5E6E89;
+    font-size: 18px;
+    font-weight: 600;
+}
+.products{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap:18px;
+}
+
+.product-detailed-section{
+    height: auto;
+    background-color: #F7F8FA;
+    
+}
+
+.product-promo-wrapper{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+}
+
+.product-promo-text-container{
+    margin-bottom: 15px;
+}
+.product-promo-text-container h3{
+    font-family: Poppins;
+    font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* or 116% */
+
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.9px;
+
+color: #1D252C;
+width: 75%;
+margin-bottom: 5px;
+}
+.product-promo-text-container >  p{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+/* or 142% */
+
+
+/* green */
+
+color: #56B280;
+}
+
+.product-features p{
+    margin-bottom: 0;
+}
+
+.learn-more{
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    padding: 8px 44px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.tesimonial-section{
+    background-color: #56b27f25;
+    overflow: hidden;
+    
+}
+
+.testimonial-container{
+    width: 85%;
+    margin: 45px auto;
+    text-align: center;
+}
+.testimonial-container h3{
+    font-family: 'Poppins';
+    font-weight: 500;
+font-size: 40px;
+line-height: 58px;
+margin-bottom: 0;
+letter-spacing: -0.9px;
+}
+
+.testimonial-container p{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 153% */
+
+text-align: center;
+letter-spacing: 0.1px;
+
+/* dark-1 */
+
+color: #5E6E89;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap:18px;
+    margin-top: 35px;
+    margin-bottom: 35x;
+}
+
+.popular-product-container{
+    width: 85%;
+    margin: 45px auto;
+}
+
+.popular-product-container >h3,p{
+    font-family: 'Poppins', sans-serif;
+    
+    margin-bottom: 5px;
+}
+.popular-product-container h3{
+    font-size: 40px;
+    letter-spacing: -0.9px;
+    text-align: center;
+
+color: #0B254B;
+line-height: 58px;
+font-weight: 500;
+}
+.popular-product-container p{
+    letter-spacing: 0.1px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+
+/* dark-1 */
+
+color: #5E6E89;
+}
+
+.popular-products{
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap:18px;
+}
+
+
+@media screen and (max-width:627px){
+    .promotion-image{
+        display: none;
+    }
+}
