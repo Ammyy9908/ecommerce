@@ -1,5 +1,5 @@
 .footer{
-    height: 344px;
+    height: auto;
     background-color: var(--dark-color);
     display: flex;
     align-items: center;
