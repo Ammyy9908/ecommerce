@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
@@ -68,6 +69,12 @@ function Cart({cart,RemoveItem,Increment,Decrement}) {
         <div className='cart-page'>
             <Navbar/>
 
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Candleaf|Cart</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+
             <section className='cart-section'>
                 <div className="cart-section-container">
                     {cart.length>0 && <div className="cart-section-header">
@@ -103,7 +110,7 @@ function Cart({cart,RemoveItem,Increment,Decrement}) {
                     </div>}
                 </div>
             </section>
-            {cart.length>3 && <Footer/>}
+            {cart.length>=3 && <Footer/>}
         </div>
     )
 }

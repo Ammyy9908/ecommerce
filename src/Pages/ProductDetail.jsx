@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar'
@@ -85,6 +86,12 @@ function PorductDetail({id,cart,SetCart,Increment,Decrement,RemoveItem}) {
     
     return (
         <div className='product-detail-page'>
+
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>{product && product.name}</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
            
             <Navbar/>
             <section className='product_detail_section'>

@@ -43,8 +43,9 @@ function Home() {
 ]
     return (
         <div className="home">
+                      <Navbar/>
             <section className='hero' style={{backgroundImage:`url(${banner})`}}>
-            <Navbar/>
+  
             {/* <img src={banner} alt="" /> */}
             <div className="banner-content">
                 <div className="banner-content-main">
