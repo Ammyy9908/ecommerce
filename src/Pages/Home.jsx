@@ -3,14 +3,7 @@ import Navbar from '../Components/Navbar'
 import "./Home.css"
 import banner from "../assets/hero.png"
 import ProductCard from '../Components/ProductCard'
-import product1 from "../assets/product1.png"
-import product2 from "../assets/product2.png"
-import product3 from "../assets/blueberry.png"
-import product4 from "../assets/lemon.png"
-import product5 from "../assets/golden.png"
-import product6 from "../assets/cinamon.png"
-import product7 from "../assets/cherry.png"
-import product8 from "../assets/lavander.png"
+
 import image from "../assets/candle_groups.png"
 import checkmark from "../assets/checkmark.svg"
 import Testimonial from '../Components/Testimonial'
@@ -18,52 +11,11 @@ import user1 from "../assets/user1.png"
 import user2 from "../assets/user2.png"
 import user3 from "../assets/user3.png"
 import Footer from '../Components/Footer'
-
+import {products} from "../data/products"
 function Home() {
 
 
-    const products = [
-        {
-            id:1,
-            name:"Spiced Mint",
-            image:product1
-        },
-        {
-            id:2,
-            name:"Sweet Straweberry",
-            image:product2
-        },
-        {
-            id:3,
-            name:"Cool Blueberries",
-            image:product3
-        },
-        {
-            id:4,
-            name:"Juicy Lemon",
-            image:product4
-        },
-        {
-            id:5,
-            name:"Stary Golden",
-            image:product5
-        },
-        {
-            id:6,
-            name:"Fragrant Cinnamon",
-            image:product6
-        },
-        {
-            id:7,
-            name:"Summer Cherries",
-            image:product7
-        },
-        {
-            id:8,
-            name:"Clean Lavander",
-            image:product8
-        },
-    ]
+    
 
 
     const testimonials = [
@@ -111,7 +63,7 @@ function Home() {
                     <div className="products">
                         {
                             products.map((product,i)=>{
-                                return <ProductCard image={product.image} name={product.name}/>
+                                return <ProductCard image={product.image} name={product.name} id={product.id} price={product.price}/>
                             })
                         }
                     </div>
@@ -159,7 +111,7 @@ function Home() {
                         <div className="popular-products">
                             {
                                 products.slice(0,4).map((product,i)=>{
-                                    return <ProductCard image={product.image} name={product.name}/>
+                                    return <ProductCard image={product.image} name={product.name} id={product.id} price={product.price}/>
                                 })
                             }
                         </div>

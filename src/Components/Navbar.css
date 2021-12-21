@@ -52,6 +52,24 @@ nav ul li a{
     justify-content: space-between;
     gap:10px;
 }
+.cart-icon{
+    position: relative;
+}
+
+.cart_counter{
+    width: 11px;
+    height: 11px;
+    background-color: var(--primary-color);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:0;
+    color: #fff;
+    border-radius: 50%;
+    top: -1px;
+}
 
 
 @media screen and (max-width:650px){

@@ -5,7 +5,9 @@ import wordmark from "../assets/wordmark.svg"
 import cartIcon from "../assets/Cart.svg"
 import menu from "../assets/menu.svg"
 import ProfileIcon from "../assets/Profile.svg"
-function Navbar() {
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+function Navbar({cart}) {
     return (
         <div className='navbar'>
             <div className="navbar-wrapper">
@@ -13,12 +15,12 @@ function Navbar() {
                 <button className="menu-btn">
                     <img src={menu} alt="menu-icon" />
                 </button>
-                <a href="#logo">
+                <Link to="/">
                     <img src={logo} alt="" />
                     <span>
                         <img src={wordmark} alt="" />
                     </span>
-                </a>
+                </Link>
 
                 <nav>
                     <ul>
@@ -32,13 +34,19 @@ function Navbar() {
                 <a href="#user">
                         <img src={ProfileIcon} alt="" />
                     </a>
-                    <a href="#cart">
+                    <Link to="/cart" className='cart-icon'>
+                        {cart.length>0 && <span className="cart_counter">{cart.length}</span>}
                         <img src={cartIcon} alt="" />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Navbar
+
+const mapStateToProps = (state) => ({
+    cart:state.appReducer.cart
+})
+
+export default connect(mapStateToProps,null)(Navbar)

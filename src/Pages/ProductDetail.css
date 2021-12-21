@@ -1,0 +1,97 @@
+.product_detail_section{
+    width: 100%;
+}
+
+.product-detailed-container{
+    width: 85%;
+    margin: 45px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-detailed-container  .product-image{
+    width: 540px;
+    height: 433px;
+    background-color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img{
+transform: scale(1.5);
+}
+
+.product-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #272727;
+    line-height: 58px;
+    letter-spacing: -0.9px;
+    margin-bottom: 0;
+}
+
+.one-time-price{
+    font-weight: 600;
+font-size: 26px;
+display: flex;
+align-items: center;
+letter-spacing: -0.9px;
+
+/* green */
+
+color: #56B280;
+}
+
+.product-qty{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    width: 75px;
+}
+
+.product-quantity-controls{
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--primary-color);
+}
+.product-quantity-controls button{
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+.increment-btn{
+    color: var(--primary-color);
+}
+
+.add_to_cart_btn{
+    width: 350px;
+    height: 42px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-shipping-taglines{
+    width: 540px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.product-extra-features{
+    border: 1px solid #E6E6E6;
+    margin-top: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
