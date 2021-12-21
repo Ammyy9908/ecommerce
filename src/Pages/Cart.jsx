@@ -72,7 +72,7 @@ function Cart({cart,RemoveItem,Increment,Decrement}) {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Candleaf|Cart</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                
             </Helmet>
 
             <section className='cart-section'>

@@ -90,7 +90,7 @@ function PorductDetail({id,cart,SetCart,Increment,Decrement,RemoveItem}) {
         <Helmet>
                 <meta charSet="utf-8" />
                 <title>{product && product.name}</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+               
             </Helmet>
            
             <Navbar/>

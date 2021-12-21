@@ -12,6 +12,7 @@ import user2 from "../assets/user2.png"
 import user3 from "../assets/user3.png"
 import Footer from '../Components/Footer'
 import {products} from "../data/products"
+import { Helmet } from 'react-helmet'
 function Home() {
 
 
@@ -44,6 +45,12 @@ function Home() {
     return (
         <div className="home">
                       <Navbar/>
+
+                      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Candleaf|Home</title>
+                
+            </Helmet>
             <section className='hero' style={{backgroundImage:`url(${banner})`}}>
   
             {/* <img src={banner} alt="" /> */}
