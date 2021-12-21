@@ -6,6 +6,7 @@
     z-index: 1;
     overflow: hidden;
     background-attachment: fixed;
+    background-size: cover;
 }
 .hero >  img{
     position: absolute;
